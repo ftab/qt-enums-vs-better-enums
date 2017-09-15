@@ -27,7 +27,7 @@ void SingWithQ_ENUM(void)
                       .valueToKey((int)mycolor)
          << " daba-dee daba-die" << endl;
 
-    /* Now iterate over Color::Primary */
+    /* Now iterate over all enums in Color */
     QMetaObject meta = Color::staticMetaObject;
     for (int i=0; i < meta.enumeratorCount(); ++i) {
         QMetaEnum m = meta.enumerator(i);
